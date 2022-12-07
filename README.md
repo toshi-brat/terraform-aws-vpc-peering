@@ -38,13 +38,7 @@ Also, because of a bug in the Terraform registry ([hashicorp/terraform#21417](ht
 the registry shows many of our inputs as required when in fact they are optional.
 The table below correctly indicates which inputs are required.
 
-
-
 For a complete example, see [examples/complete](examples/complete).
-
-For Complete Execution of the Code the Code need to be Applied Twice as in order to firstly create the VPC and Subnets along with the Routes, and secondaly to merge the Routes of both the VPC`s.
-In order to achive so the first Apply need to be run with the ["aws_route" "requestor"]["aws_route" "acceptor"] resources commented out, and the second apply with these resources.
-
 
 For automated tests of the complete example using [bats](https://github.com/bats-core/bats-core) and [Terratest](https://github.com/gruntwork-io/terratest) (which tests and deploys the example on AWS), see [test](test).
 
