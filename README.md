@@ -27,6 +27,10 @@ Security scanning is graciously provided by Bridgecrew. Bridgecrew is the leadin
 
 ## Usage
 
+**NOTE:**
+For Complete Execution of the Code the Code need to be Applied Twice as in order to firstly create the VPC and Subnets along with the Routes, and secondaly to merge the Routes of both the VPC`s.
+In order to achive so the first Apply need to be run with the ["aws_route" "requestor"]["aws_route" "acceptor"] resources commented out, and the second apply with these resources.
+
 
 **IMPORTANT:** We do not pin modules to versions in our examples because of the
 difficulty of keeping the versions in the documentation in sync with the latest released versions.
